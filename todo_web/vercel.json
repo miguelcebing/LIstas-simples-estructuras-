@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "todo-linked-list",
+  "public": true,
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
