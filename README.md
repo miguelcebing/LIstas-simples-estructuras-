@@ -6,54 +6,37 @@ Proyecto de implementación de listas enlazadas simples en Python y web.
 
 ```
 .
-├── .agents/SKILL/          # Skills del proyecto
-│   ├── SKILL.md           # Definición de la skill
-│   └── AGENT.md           # Reglas del proyecto
-├── todo_linked_list/       # Implementación Python (Terminal + GUI)
-│   ├── models/            # Modelo de datos
-│   │   ├── task.py        # Clase Task
-│   │   ├── task_node.py   # Clase TaskNode
-│   │   └── task_list.py   # Clase TaskList
-│   ├── frontend/          # Interfaces
-│   │   ├── cli.py         # Terminal
-│   │   └── gui.py         # GUI (tkinter)
-│   ├── main.py            # Entry point
-│   └── test.py            # Pruebas
-└── todo_web/              # Implementación Web (HTML/CSS/JS)
-    ├── index.html         # Estructura HTML
-    ├── styles.css         # Estilos modernos
-    ├── app.js             # Lógica con Linked List
-    ├── vercel.json        # Configuración Vercel
-    └── README.md          # Documentación web
+├── .agents/SKILL/      # Skills del proyecto
+│   ├── SKILL.md        # Definición de la skill
+│   └── AGENT.md        # Reglas del proyecto
+└── todo_web/           # Implementación Web (HTML/CSS/JS)
+    ├── index.html      # Estructura HTML
+    ├── styles.css      # Estilos modernos
+    ├── app.js          # Lógica con Linked List
+    └── README.md       # Documentación
 ```
 
-## Implementaciones
+## Cómo Ejecutar
 
-### Python (todo_linked_list/)
-- Interfaz de terminal (CLI)
-- Interfaz gráfica (GUI con tkinter)
-- Implementación con punteros exclusivamente
+1. Abre `todo_web/index.html` en tu navegador
+2. O usa un servidor local:
 
-### Web (todo_web/)
-- HTML/CSS/JavaScript puro
-- Diseño moderno oscuro
-- Responsive design
-- LocalStorage para persistencia
-- Lista enlazada en JavaScript
-
-## Despliegue
-
-### Vercel (Web)
 ```bash
 cd todo_web
-vercel
+python -m http.server 8000
 ```
 
-### Python
-```bash
-cd todo_linked_list
-python main.py
-```
+Luego abre `http://localhost:8000`
+
+## Características
+
+- Tema oscuro moderno con gradientes
+- Animaciones suaves
+- Filtros (All/Pending/Completed)
+- Estadísticas en tiempo real
+- Responsive design
+- Persistencia con LocalStorage
+- Implementación con punteros exclusivamente
 
 ## Reglas
 

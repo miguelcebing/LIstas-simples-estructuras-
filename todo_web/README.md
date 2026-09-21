@@ -29,13 +29,28 @@ This project demonstrates a **Singly Linked List** implementation:
 ## Project Structure
 
 ```
-todo_web/
-├── index.html      # Main HTML structure
-├── styles.css      # Modern CSS styling
-├── app.js          # Linked List + UI logic
-├── vercel.json     # Vercel deployment config
-└── README.md       # This file
+.
+├── .agents/SKILL/      # Project skills
+│   ├── SKILL.md
+│   └── AGENT.md
+└── todo_web/
+    ├── index.html      # Main HTML structure
+    ├── styles.css      # Modern CSS styling
+    ├── app.js          # Linked List + UI logic
+    └── README.md
 ```
+
+## How to Run
+
+1. Open `todo_web/index.html` in your browser
+2. Or use a local server:
+
+```bash
+cd todo_web
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`
 
 ## Rules Followed
 
@@ -44,21 +59,6 @@ todo_web/
 - All traversal via `node.next`
 - Code in English
 - Clean separation of concerns
-
-## Deployment
-
-### Deploy to Vercel
-
-1. Push to GitHub
-2. Import project in Vercel
-3. Deploy automatically
-
-Or use Vercel CLI:
-
-```bash
-npm i -g vercel
-vercel
-```
 
 ## License
 
